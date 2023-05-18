@@ -1,0 +1,113 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-family: 'Merriweather', serif ;
+    --color-principal: #ededed;
+    --color-de-botones: #da9feb;
+    --color-secundario: #85dae5;
+    --color-terciario: #9093f9;
+    --color-de-texto-principal: #1243b5;
+    --color-de-texto-secundario: #ffff;  
+    --color-de-transicion: #d291d5;
+}
+
+header{
+    margin: auto;
+    width: auto;
+    height: 75px;
+    display: flex;
+    justify-content: end;
+    background-color: var(--color-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-de-texto-principal);
+    font-weight: bold;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.navegation-buttons{
+    padding: auto;
+    margin: 25px;
+    margin-right: 80px;
+    width: 500px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navegation-buttons li{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+main{
+    margin: 0;
+    background-color: var(--color-principal);
+    color: var(--color-de-texto-principal);
+}
+
+.presentacion{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-contacto{
+    background-color: violet;
+}
+
+.boton-contacto:hover{
+    background-color:pink;
+}
+
+.container-presentacion{
+    display: flex;
+    flex-direction: row;
+}
+
+.informacion{
+    margin: 150px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    line-height: 45px;
+
+}
+
+.nombre{
+    font-size: 50px;
+    color: #79b3e8 ;
+}
+
+.gustos{
+    font-size: small ;
+    color: var(--color-de-texto-principal); 
+    
+}
+
+.boton-inicial{
+    width: 150px;
+    height: 45px;
+    border-radius: 25px ;
+    color: var(--color-principal);
+    border: 1px solid var(--color-de-botones);
+    background-color: var(--color-de-botones);
+}
+
+.boton-inicial:hover{
+    background-color: var(--color-de-transicion)
+}
+
+.imagen-personal{
+    height: 300px;
+    width: 300px;
+    margin: 100px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 500px;
+}
