@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,101 +8,154 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1861cbaba.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-        <header>
-            <nav>
-                <ul class="navegation-buttons">
-                    <li>
-                        <a href="">HOLA</a>
-                    </li>
-                    <li a href="">
-                        CONOCIMIENTOS
-                    </li>
-                    <li a href="">
+    <header>
+        <nav>
+            <ul class="navegation-buttons">
+                <li>
+                    <a href="#seccion-presentación" class="botones-header" >
+                        HOLA
+                    </a>
+                </li>
+                <li >
+                    <a href="#seccion-conocimientos" class="botones-header" >
+                        CONOCIMIENTOS 
+                    </a>
+                </li>
+                <li>
+                    <a href="#seccion-proyectos" class="botones-header" >
                         PROYECTOS
-                    </li>
-                    <li class="boton-contacto" a href="">
+                    </a>
+                </li>
+                <li class="boton-contacto">
+                    <a href="#seccion-contacto" class="botones-header enlace-contacto">
                         CONTACTO
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="container-presentacion">
-                <div class="informacion">
-                    <h2>
-                        ¡Hola! soy
-                    </h2>
-                    <h1 class="nombre">
-                        Melanie Di Pardo
-                    </h1>
-                    <h3 class="gustos">
-                        Desarrolladora y amante de los gatos
-                    </h3>
-                    <button class="boton-inicial" a href="">
-                        LO QUE HAGO
-                    </button>
-                </div>
-                <div>
-                    <figure>
-                        <img src="./melanie.jpg" alt="Foto Melanie Di Pardo" class="imagen-personal">
-                    </figure>
-                </div>
-            </section>
-            <section>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container-presentacion">
+            <a name="seccion-presentación"></a>
+            <div class="informacion">
                 <h2>
+                    ¡Hola! soy
+                </h2>
+                <h1 class="nombre">
+                    Melanie Di Pardo
+                </h1>
+                <h3 class="gustos">
+                    Desarrolladora y amante de los gatos
+                </h3>
+                <button class="boton-inicial" a href="">
+                    LO QUE HAGO
+                </button>
+            </div>
+            <div>
+                <figure>
+                    <img src="./public/melanie.jpg" alt="Foto Melanie Di Pardo" class="imagen-personal">
+                </figure>
+            </div>
+        </section>
+        <section class="container-de-habilidades">
+            <a name="seccion-conocimientos"></a>
+            <div class="mis-conocimientos">
+                <h2 class="titulo">
                     Mis conocimientos
                 </h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel ab quas architecto.
+                <p class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur
                 </p>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </section>
-            <section>
-                <article>
+            </div>
+            <div class="container-conocimientos">
+                    <figure class="figuras-skills">
+                        <i class="fa-brands fa-html5 fa-8x" style="color: #e37a16;"></i>
+                        <figcaption>
+                            HTML 5
+                        </figcaption>
+                    </figure>
+                    <figure class="figuras-skills">
+                        <i class="fa-brands fa-css3-alt fa-8x" style="color: #218df2;"></i>
+                        <figcaption>
+                            CSS 3
+                        </figcaption>
+                    </figure>
+                    <figure class="figuras-skills">
+                        <i class="fa-brands fa-sass fa-8x" style="color: #cf80d0;"></i>
+                        <figcaption>
+                            SASS
+                        </figcaption>
+                    </figure>
+                    <figure class="figuras-skills">
+                        <i class="fa-brands fa-js fa-8x" style="color: #e1d441;"></i>
+                        <figcaption>
+                            JAVASCRIPT
+                        </figcaption>
+                    </figure>
+                    <figure class="figuras-skills">
+                        <i class="fa-brands fa-react fa-8x" style="color: #21d8fd;"></i>
+                        <figcaption>
+                            REACT
+                        </figcaption>
+                    </figure>
+                    <figure class="figuras-skills">    
+                        <i class="fa-brands fa-git-alt fa-8x" style="color: #f56200;"></i>
+                        <figcaption>
+                            GIT
+                        </figcaption>
+                    </figure>
+                
+            </div>
+        </section>
+        <section>
+            <article>
                 <i>
 
                 </i>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dignissimos animi nesciunt corporis sunt maxime fuga quis harum saepe alias dolorum suscipit nulla a labore nostrum reiciendis dolore mollitia vitae.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dignissimos animi nesciunt
+                    corporis sunt maxime fuga quis harum saepe alias dolorum suscipit nulla a labore nostrum reiciendis
+                    dolore mollitia vitae.
                 </p>
                 <p>SOMEONE</p>
             </article>
-            </section>
-            <section>
-                <h2>
-                    Mis proyectos
-                </h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, velit? Dolorum vero dolores molestiae consequuntur sed ab neque nobis! Laborum dolores vero, quae vel incidunt nobis modi praesentium sed laudantium!
-                </p>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-            </section>
-            <section>
-                <div>
+        </section>
+        <section>
+            <a name="seccion-proyectos"></a>
+            <h2>
+                Mis proyectos
+            </h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, velit? Dolorum vero dolores molestiae
+                consequuntur sed ab neque nobis! Laborum dolores vero, quae vel incidunt nobis modi praesentium sed
+                laudantium!
+            </p>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
+        <section>
+            <a name="seccion-contacto"></a>
+            <div>
                 <h2>
                     Contactame
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis error ducimus et laborum repudiandae adipisci sunt, delectus cumque reiciendis officia accusamus dicta voluptate illo iure laudantium provident nam ea.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis error ducimus et laborum
+                    repudiandae adipisci sunt, delectus cumque reiciendis officia accusamus dicta voluptate illo iure
+                    laudantium provident nam ea.
                 </p>
                 <ul>
                     <li>
@@ -129,32 +183,33 @@
                     Enviar
                 </button>
             </div>
-            </section>
-        </main>
-        <footer>
-            <ul>
-                <li>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
 
-                </li>
-                <li>
+            </li>
+            <li>
 
-                </li>
-                <li>
+            </li>
+            <li>
 
-                </li>
-            </ul>
-            <ul>
-                <li>
+            </li>
+        </ul>
+        <ul>
+            <li>
 
-                </li>
-                <li>
+            </li>
+            <li>
 
-                </li>
-                <li>
-                    
-                </li>
-            </ul>
-            <p> Hecho con 💜 por Melanie</p>
-        </footer>
-</body>         
+            </li>
+            <li>
+
+            </li>
+        </ul>
+        <p> Hecho con 💜 por Melanie</p>
+    </footer>
+</body>
+
 </html>
