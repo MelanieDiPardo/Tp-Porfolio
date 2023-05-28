@@ -5,11 +5,11 @@
     font-family: 'Secular One', sans-serif;
     --color-principal: #ededed;
     --color-de-botones: #da9feb;
-    --color-secundario: #85dae5;
-    --color-terciario: #9093f9;
-    --color-de-texto-principal: #1243b5;
+    --color-secundario: #8ab8f4;
+    --color-terciario:  #9093f9;
+    --color-de-texto-principal: #454045;
     --color-de-texto-secundario: #ffff;  
-    --color-de-transicion: #d291d5;
+    --color-de-transicion: #ce89d2;
 }
 
 header{
@@ -22,7 +22,6 @@ header{
     z-index: 10;
     position: sticky;
     top: 0;
-
 }
 
 nav{
@@ -51,23 +50,30 @@ nav{
     text-decoration: none;
 }
 
-
 .boton-contacto{
     background-color: var(--color-de-botones);
     color: var(--color-principal);
 }
 
-
 .boton-contacto:hover{
     background-color: var(--color-de-transicion);
+    color: var(--color-principal);
 }
 
-.botones-header{
+.enlaces-header{
     color: var(--color-de-texto-principal);
+}
+
+.enlaces-header:hover{
+    color: var(--color-de-botones);
 }
 
 .enlace-contacto{
     color: var(--color-principal);
+}
+
+li:active{
+    box-shadow: -2px 0px 10px 0px  var(--color-de-transicion);
 }
 
 main{
@@ -76,6 +82,10 @@ main{
     color: var(--color-de-texto-principal);
 }
 
+section {
+    padding: 50px 0px;
+}
+ 
 .presentacion{
     margin: auto;
     display: flex;
@@ -121,9 +131,18 @@ main{
     background-color: var(--color-de-botones);
     cursor: pointer;
 }
+.boton-inicial a{
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
 
 .boton-inicial:hover{
     background-color: var(--color-de-transicion)
+}
+
+.boton-inicial:active{
+    box-shadow: -2px 0px 10px 0px  var(--color-de-transicion);
 }
 
 .imagen-personal{
@@ -141,7 +160,6 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 130px;
     gap: 25px;
     text-align: center;
 }
@@ -156,10 +174,15 @@ main{
     width: 40ch;
 }
 
-.container-conocimientos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.conocimientos-columna-uno{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.conocimientos-columna-dos{
+    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
@@ -168,12 +191,31 @@ main{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding: 50px;
+    width: 250px;
+    height: 250px;
 }
 
 .figuras-skills:hover{
-    outline-color: 2px var(--color-secundario);
-    color: var(--color-secundario);
-
+    outline-color: 3px var(--color-terciario);
+    color: var(--color-terciario);
 }
+
+.nombres-skills{
+    font-size: 20px;
+}
+
+/*revisar este color*/
+.contenedor-articulo{
+    background: var(--color-secundario);
+    height: 400px;
+    color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+

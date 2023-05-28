@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Melanie Di Pardo Porfolio </title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1861cbaba.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/d1861cbaba.js" crossorigin="anonymous"></script>
 </head>
 
@@ -17,23 +18,23 @@
     <header>
         <nav>
             <ul class="navegation-buttons">
-                <li>
-                    <a href="#seccion-presentación" class="botones-header" >
+                <li class="botones-header">
+                    <a href="#seccion-presentación" class="enlaces-header">
                         HOLA
                     </a>
                 </li>
-                <li >
-                    <a href="#seccion-conocimientos" class="botones-header" >
+                <li class="botones-header"> 
+                    <a href="#seccion-conocimientos" class="enlaces-header">
                         CONOCIMIENTOS 
                     </a>
                 </li>
-                <li>
-                    <a href="#seccion-proyectos" class="botones-header" >
+                <li class="botones-header">
+                    <a href="#seccion-proyectos" class="enlaces-header">
                         PROYECTOS
                     </a>
                 </li>
                 <li class="boton-contacto">
-                    <a href="#seccion-contacto" class="botones-header enlace-contacto">
+                    <a href="#seccion-contacto" class="enlace-contacto">
                         CONTACTO
                     </a>
                 </li>
@@ -42,7 +43,8 @@
     </header>
     <main>
         <section class="container-presentacion">
-            <a name="seccion-presentación"></a>
+            <a name="seccion-presentación">
+            </a>
             <div class="informacion">
                 <h2>
                     ¡Hola! soy
@@ -53,8 +55,10 @@
                 <h3 class="gustos">
                     Desarrolladora y amante de los gatos
                 </h3>
-                <button class="boton-inicial" a href="">
+                <button class="boton-inicial">
+                    <a href="#seccion-proyectos">
                     LO QUE HAGO
+                </a>
                 </button>
             </div>
             <div>
@@ -73,52 +77,54 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur
                 </p>
             </div>
-            <div class="container-conocimientos">
+            <div class="conocimientos-columna-uno">
                     <figure class="figuras-skills">
-                        <i class="fa-brands fa-html5 fa-8x" style="color: #e37a16;"></i>
-                        <figcaption>
+                        <i class="fa-brands fa-html5 fa-5x" style="color:#e75d13;"></i>
+                        <figcaption class="nombres-skills">
                             HTML 5
                         </figcaption>
                     </figure>
                     <figure class="figuras-skills">
-                        <i class="fa-brands fa-css3-alt fa-8x" style="color: #218df2;"></i>
-                        <figcaption>
+                        <i class="fa-brands fa-css3-alt fa-5x" style="color: #218df2;"></i>
+                        <figcaption class="nombres-skills">
                             CSS 3
                         </figcaption>
                     </figure>
                     <figure class="figuras-skills">
-                        <i class="fa-brands fa-sass fa-8x" style="color: #cf80d0;"></i>
-                        <figcaption>
+                        <i class="fa-brands fa-sass fa-5x" style="color: #cf80d0;"></i>
+                        <figcaption class="nombres-skills">
                             SASS
                         </figcaption>
                     </figure>
+                </div>
+            <div class="conocimientos-columna-dos">
                     <figure class="figuras-skills">
-                        <i class="fa-brands fa-js fa-8x" style="color: #e1d441;"></i>
-                        <figcaption>
+                        <i class="fa-brands fa-js fa-5x" style="color: #e1d441;"></i>
+                        <figcaption class="nombres-skills">
                             JAVASCRIPT
                         </figcaption>
                     </figure>
                     <figure class="figuras-skills">
-                        <i class="fa-brands fa-react fa-8x" style="color: #21d8fd;"></i>
-                        <figcaption>
+                        <i class="fa-brands fa-react fa-5x" style="color: #21d8fd;"></i>
+                        <figcaption class="nombres-skills">
                             REACT
                         </figcaption>
                     </figure>
                     <figure class="figuras-skills">    
-                        <i class="fa-brands fa-git-alt fa-8x" style="color: #f56200;"></i>
-                        <figcaption>
+                        <i class="fa-brands fa-git-alt fa-5x" style="color: #f56200;"></i>
+                        <figcaption class="nombres-skills">
                             GIT
                         </figcaption>
                     </figure>
                 
             </div>
         </section>
-        <section>
+        <section class="contenedor-articulo">
             <article>
-                <i>
-
-                </i>
-                <p>
+                <figure class="comillas">
+                    <i class="fa-solid fa-quote-right fa-6x"></i>
+                </figure>
+                <p class="frase">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, dignissimos animi nesciunt
                     corporis sunt maxime fuga quis harum saepe alias dolorum suscipit nulla a labore nostrum reiciendis
                     dolore mollitia vitae.
