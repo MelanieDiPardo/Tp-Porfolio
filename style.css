@@ -83,14 +83,9 @@ main{
 }
 
 section {
-    padding: 50px 0px;
+    padding: 140px 0px;
 }
- 
-.presentacion{
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-}
+
 
 .container-presentacion{
     display: flex;
@@ -103,12 +98,12 @@ section {
     justify-content: start;
     flex-direction: column;
     line-height: 45px;
+    font-size: 20px;
 
 }
 
 .nombre{
     font-size: 50px;
-    color: #79b3e8 ;
     background: linear-gradient(45deg, var(--color-de-transicion), var(--color-terciario));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -117,8 +112,9 @@ section {
 }
 
 .gustos{
-    font-size: small ;
+    font-size: 15px ;
     color: var(--color-de-texto-principal); 
+    font-weight: lighter;
     
 }
 
@@ -146,8 +142,8 @@ section {
 }
 
 .imagen-personal{
-    height: 300px;
-    width: 300px;
+    height: 330px;
+    width: 330px;
     margin: 100px;
     margin-left: 30px;
     display: flex;
@@ -210,12 +206,121 @@ section {
 /*revisar este color*/
 .contenedor-articulo{
     background: var(--color-secundario);
-    height: 400px;
+    height: 545px;
     color: var(--color-principal);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 45px;
+    text-align: center;
+    padding: 100px 0px;  
+}
+
+.frase{
+    width: 55ch;
+    font-size: 20px;  
+}
+
+.autor-de-la-frase{
+    font-size: 25px;
+}
+
+.contenedor-de-proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
+
+.mis-proyectos{
+    font-size: 45px;
+}
+
+.parrafo-descriptivo{
+    font-size: 15px;
+    width: 40ch;
+}
+
+.columna-de-proyectos-uno{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.columna-de-proyectos-dos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.columna-de-proyectos-tres{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 20px;
+}
+
+.imagenes-de-proyectos{
+    outline: 1px solid rgb(214, 212, 212);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 40px;
+    width: 340px;
+    height: 200px;
+}
+
+.nombre-de-los-proyectos{
+    font-size: 15px;
+}
+
+.contacto-principal{
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    gap: 100px;
+    padding: 70px 70px;
+    outline: 1px solid rgb(200, 195, 195);
+    border-radius: 20px;
+    height: 600px;
+}
+
+.redes-de-contacto{
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.seccion-contacto-titulo{
+    font-size: 45px;
+    
+}
+
+.lista-iconos-redes{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    cursor: pointer;
+}
+
+.iconos-de-contacto:hover{
+    background-color: #9093f9;
+    height: 30px;
+    width: 40px;
+    border-radius: 50px;    
+    display: flex;
+    justify-content: start;
+}
+
+.nombre-de-redes{
+    
+}
+
+
+
 
