@@ -135,56 +135,52 @@
         </section>
         <a name="seccion-proyectos"></a>
         <section class="contenedor-de-proyectos">
-            <h2 class="mis-proyectos">
+            <h2 class="titulo-mis-proyectos">
                 Mis proyectos
             </h2>
             <p class="parrafo-descriptivo">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, velit? Dolorum vero dolores molestiae
                 consequuntur sed laudantium!
             </p>
-            <div class="columna-de-proyectos-uno">
-                <figure>
-                    <img src="./public/porfolio.jpg" alt="Ilustracion de Porfolio" class="imagenes-de-proyectos">
+            <div class="mis-proyectos">
+                <figure class="figure-proyectos">
+                    <img src="./public/portfolio.png" alt="Ilustracion de Porfolio" class="imagenes-de-proyectos">
                     <figcaption class="nombre-de-los-proyectos">
                         Portfolio
                     </figcaption>
                 </figure>
-                <figure>
-                    <img src="./public/generador.jpg" alt="Ilustracion Generador de memes"   class="imagenes-de-proyectos">
+                <figure class="figure-proyectos">
+                    <img src="./public/generador.png" alt="Ilustracion Generador de memes"   class="imagenes-de-proyectos">
                     <figcaption class="nombre-de-los-proyectos">
                         Generador de memes
                     </figcaption>
                 </figure>
-                <figure>
-                    <img src="./public/match3.jpg" alt="Ilustracion Match3" class="imagenes-de-proyectos">
+                <figure class="figure-proyectos">
+                    <img src="./public/match3.png" alt="Ilustracion Match3" class="imagenes-de-proyectos">
                     <figcaption class="nombre-de-los-proyectos">
                         Match3
                     </figcaption>
                 </figure>
-            </div>
-            <div class="columna-de-proyectos-dos">
-                <figure>
-                    <img src="./public/controlador.jpg" alt="Ilustracion Controlador de gastos"  class="imagenes-de-proyectos">
+                <figure class="figure-proyectos">
+                    <img src="./public/controlador.png" alt="Ilustracion Controlador de gastos"  class="imagenes-de-proyectos">
                     <figcaption class="nombre-de-los-proyectos">
                         Controlador de gastos
                     </figcaption>
                 </figure>
-                <figure>
+                <figure class="figure-proyectos">
                     <img src="./public/administrador.png" alt="Ilustracion  Administrador de reuniones"  class="imagenes-de-proyectos">
                     <figcaption class="nombre-de-los-proyectos">
                         Administrador de Reuniones
                     </figcaption>
                 </figure>
-                <figure>
-                    <img src="./public/todo app.jpg" alt="Ilustracion Todo App"  class="imagenes-de-proyectos">
+                <figure class="figure-proyectos">
+                    <img src="./public/todo app.png" alt="Ilustracion Todo App"  class="imagenes-de-proyectos">
                     <figcaption class="nombre-de-los-proyectos">
                         Todo App
                     </figcaption>
                 </figure>
-            </div>
-            <div class="columna-de-proyectos-tres">
-                <figure>
-                    <img src="./public/peliculas.jpg" alt="Ilustracion de generador de peliculas"  class="imagenes-de-proyectos" >
+                <figure class="figure-proyectos">
+                    <img src="./public/peliculas.png" alt="Ilustracion de generador de peliculas"  class="imagenes-de-proyectos" >
                     <figcaption class="nombre-de-los-proyectos">
                         Buscador de peliculas
                     </figcaption>
@@ -205,20 +201,26 @@
                     </p>
                     <ul class="lista-iconos-redes">
                         <li class="iconos-de-contacto">
-                            <a href="" class="nombres-de-redes">
-                                <i class="fa-brands fa-github-alt fa-2x" style="color: #da9feb;"></i>
+                            <a href="https://github.com/MelanieDiPardo" class="nombres-de-redes">
+                                <div class="container-icono">
+                                    <i class="fa-brands fa-github-alt"></i>
+                                </div>
                                 MelanieDiPardo
                             </a>                       
                         </li>
                         <li class="iconos-de-contacto">
-                            <a href="" class="nombres-de-redes">
-                                <i class="fa-brands fa-linkedin-in fa-lg" style="color: #da9feb;"></i>
+                            <a href="https://www.linkedin.com/in/melanie-di-pardo-703553245/" class="nombres-de-redes">
+                                <div class="container-icono">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
                                 Melanie Di Pardo
                             </a> 
                         </li>
                         <li class="iconos-de-contacto">
-                            <a href="" class="nombres-de-redes">
-                                <i class="fa-solid fa-envelope fa-lg" style="color: #da9feb;"></i>
+                            <a href="mailto:dipardomelanie0015@gmail.com" class="nombres-de-redes">
+                                <div class="container-icono">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
                                 dipardomelanie0015@gmail.com
                             </a> 
                         </li>
@@ -228,26 +230,28 @@
                     <h2 class="seccion-contacto-titulo">
                         Escribime
                     </h2>
-                    <form action="meailto:dipardomelanie0015@gmail.com" method="post" enctype="text/plain">
-                        <label for="nombre-usuario">
-                            Nombre*
-                            <input type="text" id="nombre-usuario">
-                        </label>
-                        <label for="apellido-usuario">
-                            Apellido*
-                            <input type="text" id="apellido-usuario">
-                        </label>
-                        <label for="email-usuario">
+                    <form action="mailto:dipardomelanie0015@gmail.com" method="post" enctype="text/plain" class="container-formulario">
+                        <div class="campo-nombre-y-apellido">
+                            <label for="nombre-usuario" class="formulario-campo">
+                                Nombre*
+                                <input class="formulario-input" type="text" id="nombre-usuario" placeholder="p. ej.: Juan" required>
+                            </label>
+                            <label for="apellido-usuario" class="formulario-campo" >
+                                Apellido*
+                                <input class="formulario-input" type="text" id="apellido-usuario" placeholder="p. ej.: Perez" required>
+                            </label>
+                        </div>
+                        <label for="email-usuario" class="formulario-campo">
                             Email*
-                            <input type="email" id="email-usuario">
+                            <input class="formulario-input" type="email" id="email-usuario" placeholder="p. ej.: juanperez@gmail.com" required>
                         </label>
-                        <label for="mensaje-usuario">
+                        <label for="mensaje-usuario" class="formulario-campo">
                             Mensaje*
-                            <textarea id="mensaje-usuario"></textarea>
+                            <textarea class="formulario-input" id="mensaje-usuario" placeholder="Escriba un mensaje aquí" required></textarea>
                         </label>
-                        <label>
-                            <input type="submit">
-                        </label>
+                        <button type="submit" class="formulario-boton">
+                            Enviar    
+                        </button>
                     </form>
                 </div>
             </div>
