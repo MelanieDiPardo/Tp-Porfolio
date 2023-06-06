@@ -1,6 +1,6 @@
 <h1 align="center"> PORTFOLIO </h1>
 <p align="center">
-    <img src="./public/Portfolio-Tp.jpg" alt="imagen-portfolio" width="600p"/>
+    ![Portfolio-Tp](https://github.com/MelanieDiPardo/tp-portfolio/assets/90484318/692e58af-ee4e-4474-810d-ab7ca2cf65e5)
 </p>
 &nbsp;
 ## Proyecto Portfolio
