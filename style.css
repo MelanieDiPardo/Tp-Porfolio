@@ -34,6 +34,14 @@ header{
     top: 0;
 }
 
+body{
+    width: 100vw;
+}
+
+main{
+    width: 100%;
+}
+
 nav{
     height: 100%;
     width: 100%;
@@ -52,6 +60,10 @@ nav{
     border-radius: 20px;
     margin-right: 50px;
     cursor: pointer
+}
+
+.navegation-buttons li:active{
+    box-shadow: 0 0 3px 3px  var(--rosa);
 }
 
 .navegation-buttons li a{
@@ -82,10 +94,6 @@ nav{
     color: var(--blanco);
 }
 
-li:active{
-    box-shadow: 0 0 3px 3px  var(--rosa);
-}
-
 /* Fin sección header */
 
 main{
@@ -95,7 +103,7 @@ main{
 }
 
 section {
-    padding: 140px 0px;
+    padding: 70px 0px;
 }
 
 /* Sección presentación */
@@ -182,7 +190,7 @@ section {
 
 .texto{
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 16px;
     width: 40ch;
 }
 
@@ -252,6 +260,7 @@ section {
     align-items: center;
     text-align: center;
     gap: 20px;
+    width: 100%;
 }
 
 .titulo-mis-proyectos{
@@ -351,6 +360,10 @@ section {
     color: var(--rosa-oscuro);
 }
 
+.redes-de-contacto .iconos-de-contacto:active{
+    box-shadow: 0 0 3px 3px var(--rosa);
+}
+
 .nombres-de-redes{
     display: flex;
     align-items: center;
@@ -442,4 +455,70 @@ section {
 ::placeholder{
     color:var(--color-de-texto-secundario);
 }
+/* Fin sección Contacto*/
+
+/* Seccion footer */
+
+.pie-de-pagina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    gap: 30px;
+    padding: 60px;
+    background-color: var(--lila);
+    color: var(--blanco);
+}
+
+.lista-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.elemento-lista-footer{
+    padding: 10px 15px;
+}
+
+.elemento-lista-footer:active{
+    border: 1px solid var(--rosa-oscuro);
+    border-radius: 50px;
+    box-shadow: 0 0 2px 2px var(--rosa-oscuro);
+}
+
+.links-footer{
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 2px;
+}
+
+.iconos-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 1.4rem;
+    list-style: none;
+    color: var(--lila);
+    cursor: pointer;
+}
+
+.pie-de-pagina .container-icono{
+    background-color: white;
+    color: var(--lila);
+}
+
+.pie-de-pagina .iconos-de-contacto:hover .container-icono{
+    background-color: var(--rosa-oscuro);
+}
+
+.pie-de-pagina .iconos-de-contacto:hover .container-icono>i{
+    color: var(--blanco);
+}
+
+.pie-de-pagina .iconos-de-contacto:active .container-icono{
+    background-color: var(--rosa-oscuro);
+    box-shadow: 0 0 1px 1px var(--blanco);
+} 
 
