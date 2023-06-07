@@ -10,7 +10,7 @@
     --color-de-texto-principal: #454045;
     --color-de-texto-secundario: #a286aa;
     --blanco: #ffff;  
-    --rosa: #da9feb;
+    --violeta: #913fa9;
     --rosa-oscuro: #ce89d2;
     --color-de-fondo: #efdcf4;
     --color--de-fondo-main: #ddcff7;
@@ -19,7 +19,8 @@
     --color-focus: #ead7ef;
     --verde: #95e0a9;
     --rojo: #fa8282;
-    --fucsia: #f471f0
+    --fucsia: #f471f0;
+    --violeta-claro: #9c5fae;
 }
 
 body{
@@ -71,7 +72,7 @@ nav{
 }
 
 .navegation-buttons li:active{
-    box-shadow: 0 0 3px 3px  var(--rosa);
+    box-shadow: 0 0 3px 3px  var(--violeta);
 }
 
 .navegation-buttons li a{
@@ -81,12 +82,12 @@ nav{
 }
 
 .boton-contacto{
-    background-color: var(--rosa);
+    background-color: var(--violeta);
     color: var(--blanco);
 }
 
 .boton-contacto:hover{
-    background-color: var(--rosa-oscuro);
+    background-color: var(--violeta-claro);
     color: var(--blanco);
 }
 
@@ -95,7 +96,7 @@ nav{
 }
 
 .enlaces-header:hover{
-    color: var(--rosa);
+    color: var(--violeta);
 }
 
 .enlace-contacto{
@@ -142,8 +143,8 @@ nav{
     height: 45px;
     border-radius: 25px ;
     color: var(--blanco);
-    border: 1px solid var(--rosa);
-    background-color: var(--rosa);
+    border: 1px solid var(--violeta);
+    background-color: var(--violeta);
     cursor: pointer;
 }
 
@@ -153,12 +154,12 @@ nav{
 }
 
 .boton-inicial:hover{
-    background-color: var( --rosa-oscuro);
-    border: 1px solid var(--rosa-oscuro)
+    background-color: var( --violeta-claro);
+    border: 1px solid var(--violeta-claro)
 }
 
 .boton-inicial:active{
-    box-shadow: 0 0 3px 3px  var(--rosa-oscuro);
+    box-shadow: 0 0 3px 3px  var(--violeta-claro);
 }
 
 .figure-imagen-personal{
@@ -209,7 +210,7 @@ nav{
 }
 
 .figuras-skills{
-    outline: 2px solid var(--rosa);
+    outline: 2px solid var(--violeta);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -232,7 +233,6 @@ nav{
 /* Fin sección habilidades*/
 
 /* Sección frase */
-/*revisar este color*/
 .seccion-articulo{
     background: var(--lila);
     color: var(--blanco);
@@ -298,7 +298,7 @@ nav{
     align-items: center;
     gap: 20px;
     padding: 30px;
-    border: 2px solid var(--rosa-oscuro);
+    border: 2px solid var(--violeta);
     border-radius: 15px;
     background-color: var(--blanco);
     width: fit-content;
@@ -362,7 +362,7 @@ nav{
 }
 
 .iconos-de-contacto:hover .container-icono{
-    background-color: var(--rosa-oscuro);
+    background-color: var(--violeta);
 }
 
 .iconos-de-contacto:hover .container-icono>i{
@@ -370,11 +370,11 @@ nav{
 }
 
 .iconos-de-contacto:hover .nombres-de-redes{
-    color: var(--rosa-oscuro);
+    color: var(--violeta);
 }
 
 .redes-de-contacto .iconos-de-contacto:active{
-    box-shadow: 0 0 3px 3px var(--rosa);
+    box-shadow: 0 0 3px 3px var(--violeta);
 }
 
 .nombres-de-redes{
@@ -397,7 +397,7 @@ nav{
 
 .container-icono i{
     font-size: 1.4rem;
-    color: var(--rosa);
+    color: var(--violeta);
 }
 
 .container-formulario{
@@ -421,7 +421,7 @@ nav{
 
 .formulario-input:focus{
     outline: 1px solid var(--color-focus);
-    box-shadow: 0 0 3px 3px  var(--rosa);
+    box-shadow: 0 0 3px 3px  var(--violeta);
 }
 
 .formulario-input:valid{
@@ -449,18 +449,18 @@ nav{
     height: 50px;
     color: var(--blanco);
     font-size: 17px;
-    background-color: var(--rosa);
+    background-color: var(--violeta);
     border-radius: 50px;
     border: none;
     cursor: pointer;
 }
 
 .formulario-boton:hover{
-    background-color: var(--rosa-oscuro);
+    background-color: var(--violeta-claro);
 }
 
 .formulario-boton:active{
-    box-shadow: 0 0 3px 3px  var(--rosa-oscuro);
+    box-shadow: 0 0 3px 3px  var(--violeta);
 }
 
 #mensaje-usuario{
@@ -497,9 +497,9 @@ nav{
 }
 
 .elemento-lista-footer:active{
-    border: 1px solid var(--rosa-oscuro);
+    border: 1px solid var(--violeta);
     border-radius: 50px;
-    box-shadow: 0 0 2px 2px var(--rosa-oscuro);
+    box-shadow: 0 0 2px 2px var(--violeta);
 }
 
 .links-footer{
@@ -520,12 +520,12 @@ nav{
 }
 
 .pie-de-pagina .container-icono{
-    background-color: white;
+    background-color: var(--blanco);
     color: var(--lila);
 }
 
 .pie-de-pagina .iconos-de-contacto:hover .container-icono{
-    background-color: var(--rosa-oscuro);
+    background-color: var(--violeta);
 }
 
 .pie-de-pagina .iconos-de-contacto:hover .container-icono>i{
@@ -533,9 +533,10 @@ nav{
 }
 
 .pie-de-pagina .iconos-de-contacto:active .container-icono{
-    background-color: var(--rosa-oscuro);
+    background-color: var(--violeta);
     box-shadow: 0 0 1px 1px var(--blanco);
 } 
+/* Fin sección footer*/
 
 /* Media query para tablets */
 @media (width < 900px ){
