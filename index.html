@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Melanie Di Pardo Portfolio </title>
+    <title> Melanie Di Pardo - Portfolio </title>
+    <link rel="icon" type="image/png" href="favicon-16x16.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="cabecera-pagina">
         <nav>
             <ul class="navegation-buttons">
                 <li class="botones-header">
@@ -24,9 +25,9 @@
                         HOLA
                     </a>
                 </li>
-                <li class="botones-header"> 
+                <li class="botones-header">
                     <a href="#seccion-conocimientos" class="enlaces-header">
-                        CONOCIMIENTOS 
+                        CONOCIMIENTOS
                     </a>
                 </li>
                 <li class="botones-header">
@@ -58,15 +59,13 @@
                 </h3>
                 <button class="boton-inicial">
                     <a href="#seccion-proyectos">
-                    LO QUE HAGO
-                </a>
+                        LO QUE HAGO
+                    </a>
                 </button>
             </div>
-            <div>
-                <figure>
-                    <img src="./public/melanie.jpg" alt="Foto Melanie Di Pardo" class="imagen-personal">
-                </figure>
-            </div>
+            <figure class="figure-imagen-personal">
+                <img src="./public/melanie.jpg" alt="Foto Melanie Di Pardo" class="imagen-personal">
+            </figure>
         </section>
         <a name="seccion-conocimientos"></a>
         <section class="container-de-habilidades">
@@ -78,7 +77,8 @@
                     Me especializo en desarrollo web frontend y las tecnologías que manejo son las siguientes:
                 </p>
             </div>
-            <div class="conocimientos-columna-uno">
+            <div class="container-habilidades">
+                <div class="conocimientos-fila">
                     <figure class="figuras-skills">
                         <i class="fa-brands fa-html5 fa-5x" style="color:#e75d13;"></i>
                         <figcaption class="nombres-skills">
@@ -98,7 +98,7 @@
                         </figcaption>
                     </figure>
                 </div>
-            <div class="conocimientos-columna-dos">
+                <div class="conocimientos-fila">
                     <figure class="figuras-skills">
                         <i class="fa-brands fa-js fa-5x" style="color: #e1d441;"></i>
                         <figcaption class="nombres-skills">
@@ -111,73 +111,86 @@
                             REACT
                         </figcaption>
                     </figure>
-                    <figure class="figuras-skills">    
+                    <figure class="figuras-skills">
                         <i class="fa-brands fa-git-alt fa-5x" style="color: #f56200;"></i>
                         <figcaption class="nombres-skills">
                             GIT
                         </figcaption>
                     </figure>
-                
+
+                </div>
             </div>
         </section>
-        <section class="contenedor-articulo">
-                <figure class="comillas">
-                    <i class="fa-solid fa-quote-right fa-6x"></i>
-                </figure>
-                <blockquote class="frase">
-                    La mayor aventura es la que nos espera. Hoy y mañana aún no se han dicho. Las posibilidades, los cambios son todos vuestros por hacer. El molde de su vida en sus manos está para romper. 
-                </blockquote>
-                <cite class="autor-de-la-frase">
-                    El Hobbit, J.R.R. Tolkien
-                </cite>
+        <section class="seccion-articulo">
+            <figure class="comillas">
+                <i class="fa-solid fa-quote-right fa-6x"></i>
+            </figure>
+            <blockquote class="frase">
+                La mayor aventura es la que nos espera. Hoy y mañana aún no se han dicho. Las posibilidades, los cambios
+                son todos vuestros por hacer. El molde de su vida en sus manos está para romper.
+            </blockquote>
+            <cite class="autor-de-la-frase">
+                El Hobbit, J.R.R. Tolkien
+            </cite>
         </section>
         <a name="seccion-proyectos"></a>
-        <section class="contenedor-de-proyectos">
+        <section class="seccion-de-proyectos">
             <h2 class="titulo-mis-proyectos">
                 Mis proyectos
             </h2>
             <p class="parrafo-descriptivo">
                 Estos son los proyectos que realice a lo largo de mi cursada por ADA ITW
             </p>
-            <div class="mis-proyectos"> 
+            <div class="mis-proyectos">
+                <div class="contenedor-proyectos">
+                    <div class="lista-proyectos">
+                        <figure class="figure-proyectos">
+                            <img src="./public/portfolio.png" alt="Ilustracion de Porfolio"
+                                class="imagenes-de-proyectos">
+                            <figcaption class="nombre-de-los-proyectos">
+                                Portfolio
+                            </figcaption>
+                        </figure>
+                        <figure class="figure-proyectos">
+                            <img src="./public/generador.png" alt="Ilustracion Generador de memes"
+                                class="imagenes-de-proyectos">
+                            <figcaption class="nombre-de-los-proyectos">
+                                Generador de memes
+                            </figcaption>
+                        </figure>
+                        <figure class="figure-proyectos">
+                            <img src="./public/match3.png" alt="Ilustracion Match3" class="imagenes-de-proyectos">
+                            <figcaption class="nombre-de-los-proyectos">
+                                Match3
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="lista-proyectos">
+                        <figure class="figure-proyectos">
+                            <img src="./public/controlador.png" alt="Ilustracion Controlador de gastos"
+                                class="imagenes-de-proyectos">
+                            <figcaption class="nombre-de-los-proyectos">
+                                Controlador de gastos
+                            </figcaption>
+                        </figure>
+                        <figure class="figure-proyectos">
+                            <img src="./public/administrador.png" alt="Ilustracion  Administrador de reuniones"
+                                class="imagenes-de-proyectos">
+                            <figcaption class="nombre-de-los-proyectos">
+                                Administrador de Reuniones
+                            </figcaption>
+                        </figure>
+                        <figure class="figure-proyectos">
+                            <img src="./public/todo app.png" alt="Ilustracion Todo App" class="imagenes-de-proyectos">
+                            <figcaption class="nombre-de-los-proyectos">
+                                Todo App
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
                 <figure class="figure-proyectos">
-                    <img src="./public/portfolio.png" alt="Ilustracion de Porfolio" class="imagenes-de-proyectos">
-                    <figcaption class="nombre-de-los-proyectos">
-                        Portfolio
-                    </figcaption>
-                </figure>
-                <figure class="figure-proyectos">
-                    <img src="./public/generador.png" alt="Ilustracion Generador de memes"   class="imagenes-de-proyectos">
-                    <figcaption class="nombre-de-los-proyectos">
-                        Generador de memes
-                    </figcaption>
-                </figure>
-                <figure class="figure-proyectos">
-                    <img src="./public/match3.png" alt="Ilustracion Match3" class="imagenes-de-proyectos">
-                    <figcaption class="nombre-de-los-proyectos">
-                        Match3
-                    </figcaption>
-                </figure>
-                <figure class="figure-proyectos">
-                    <img src="./public/controlador.png" alt="Ilustracion Controlador de gastos"  class="imagenes-de-proyectos">
-                    <figcaption class="nombre-de-los-proyectos">
-                        Controlador de gastos
-                    </figcaption>
-                </figure>
-                <figure class="figure-proyectos">
-                    <img src="./public/administrador.png" alt="Ilustracion  Administrador de reuniones"  class="imagenes-de-proyectos">
-                    <figcaption class="nombre-de-los-proyectos">
-                        Administrador de Reuniones
-                    </figcaption>
-                </figure>
-                <figure class="figure-proyectos">
-                    <img src="./public/todo app.png" alt="Ilustracion Todo App"  class="imagenes-de-proyectos">
-                    <figcaption class="nombre-de-los-proyectos">
-                        Todo App
-                    </figcaption>
-                </figure>
-                <figure class="figure-proyectos">
-                    <img src="./public/peliculas.png" alt="Ilustracion de generador de peliculas"  class="imagenes-de-proyectos" >
+                    <img src="./public/peliculas.png" alt="Ilustracion de generador de peliculas"
+                        class="imagenes-de-proyectos">
                     <figcaption class="nombre-de-los-proyectos">
                         Buscador de peliculas
                     </figcaption>
@@ -192,7 +205,9 @@
                         Contactame
                     </h2>
                     <p>
-                        Ante cualquier duda o contratación contactame! 
+                        Ante cualquier duda no dudes en consultarme.
+                        Para contrataciones contactarme por Linkedin o por correo electrónico.
+                        También acepto feedback sobre cualquiera de mis proyectos.
                     </p>
                     <ul class="lista-iconos-redes">
                         <li class="iconos-de-contacto">
@@ -201,7 +216,7 @@
                                     <i class="fa-brands fa-github-alt"></i>
                                 </div>
                                 MelanieDiPardo
-                            </a>                       
+                            </a>
                         </li>
                         <li class="iconos-de-contacto">
                             <a href="https://www.linkedin.com/in/melanie-di-pardo-703553245/" class="nombres-de-redes">
@@ -209,7 +224,7 @@
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </div>
                                 Melanie Di Pardo
-                            </a> 
+                            </a>
                         </li>
                         <li class="iconos-de-contacto">
                             <a href="mailto:dipardomelanie0015@gmail.com" class="nombres-de-redes">
@@ -217,7 +232,7 @@
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
                                 dipardomelanie0015@gmail.com
-                            </a> 
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -225,27 +240,32 @@
                     <h2 class="seccion-contacto-titulo">
                         Escribime
                     </h2>
-                    <form action="mailto:dipardomelanie0015@gmail.com" method="post" enctype="text/plain" class="container-formulario">
+                    <form action="mailto:dipardomelanie0015@gmail.com" method="post" enctype="text/plain"
+                        class="container-formulario">
                         <div class="campo-nombre-y-apellido">
                             <label for="nombre-usuario" class="formulario-campo">
                                 Nombre*
-                                <input class="formulario-input" type="text" id="nombre-usuario" placeholder="p. ej.: Juan" required>
+                                <input class="formulario-input" type="text" id="nombre-usuario"
+                                    placeholder="p. ej.: Juan" required>
                             </label>
-                            <label for="apellido-usuario" class="formulario-campo" >
+                            <label for="apellido-usuario" class="formulario-campo">
                                 Apellido*
-                                <input class="formulario-input" type="text" id="apellido-usuario" placeholder="p. ej.: Perez" required>
+                                <input class="formulario-input" type="text" id="apellido-usuario"
+                                    placeholder="p. ej.: Perez" required>
                             </label>
                         </div>
                         <label for="email-usuario" class="formulario-campo">
                             Email*
-                            <input class="formulario-input" type="email" id="email-usuario" placeholder="p. ej.: juanperez@gmail.com" required>
+                            <input class="formulario-input" type="email" id="email-usuario"
+                                placeholder="p. ej.: juanperez@gmail.com" required>
                         </label>
                         <label for="mensaje-usuario" class="formulario-campo">
                             Mensaje*
-                            <textarea class="formulario-input" id="mensaje-usuario" placeholder="Escriba un mensaje aquí" required></textarea>
+                            <textarea class="formulario-input" id="mensaje-usuario"
+                                placeholder="Escriba un mensaje aquí" required></textarea>
                         </label>
                         <button type="submit" class="formulario-boton">
-                            Enviar    
+                            Enviar
                         </button>
                     </form>
                 </div>
@@ -253,51 +273,51 @@
         </section>
     </main>
     <footer class="pie-de-pagina">
-            <ul class="lista-footer">
-                <li class="elemento-lista-footer">
-                    <a href="#seccion-presentacion" class="links-footer">
-                        HOLA
-                    </a>
-                </li>
-                <li class="elemento-lista-footer">
-                    <a href="#seccion-conocimientos" class="links-footer">
-                        CONOCIMIENTOS
-                    </a>
-                </li>
-                <li class="elemento-lista-footer">
-                    <a href="#seccion-proyectos" class="links-footer" >
-                        PROYECTOS
-                    </a>
-                </li>
-                <li class="elemento-lista-footer">
-                    <a href="#seccion-contacto" class="links-footer">
-                        CONTACTO
-                    </a>
-                </li>
-            </ul>
-            <ul class="iconos-footer">
-                <li class="iconos-de-contacto">
-                    <a href="https://github.com/MelanieDiPardo">
-                    </a>
+        <ul class="lista-footer">
+            <li class="elemento-lista-footer">
+                <a href="#seccion-presentacion" class="links-footer">
+                    HOLA
+                </a>
+            </li>
+            <li class="elemento-lista-footer">
+                <a href="#seccion-conocimientos" class="links-footer">
+                    CONOCIMIENTOS
+                </a>
+            </li>
+            <li class="elemento-lista-footer">
+                <a href="#seccion-proyectos" class="links-footer">
+                    PROYECTOS
+                </a>
+            </li>
+            <li class="elemento-lista-footer">
+                <a href="#seccion-contacto" class="links-footer">
+                    CONTACTO
+                </a>
+            </li>
+        </ul>
+        <ul class="iconos-footer">
+            <li class="iconos-de-contacto">
+                <a class="nombres-de-redes" href="https://github.com/MelanieDiPardo">
                     <div class="container-icono">
                         <i class="fa-brands fa-github-alt"></i>
-                    </div>    
-                </li>
-                <li class="iconos-de-contacto">
-                    <a href="https://www.linkedin.com/in/melanie-di-pardo-703553245/">
-                    </a>
+                    </div>
+                </a>
+            </li>
+            <li class="iconos-de-contacto">
+                <a class="nombres-de-redes" href="https://www.linkedin.com/in/melanie-di-pardo-703553245/">
                     <div class="container-icono">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
-                </li>
-                <li class="iconos-de-contacto">
-                    <a href="mailto:dipardomelanie0015@gmail.com">
-                    </a>
+                </a>
+            </li>
+            <li class="iconos-de-contacto">
+                <a class="nombres-de-redes" href="mailto:dipardomelanie0015@gmail.com">
                     <div class="container-icono">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
-                </li>
-            </ul>
+                </a>
+            </li>
+        </ul>
         <p> Hecho con 💜 por Melanie </p>
     </footer>
 </body>
